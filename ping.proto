@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+service Ping {
+	rpc Ok(OkRequest) returns (OkResponse) {}
+}
+
+message OkRequest {
+	// type name = tag
+	string quetion = 1;
+}
+
+message OkResponse {
+	// type name = tag
+	string answer = 1;
+}
